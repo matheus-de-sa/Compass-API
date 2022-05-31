@@ -1,0 +1,41 @@
+{
+    "name": "compass-api",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "dev": "ts-node-dev --respawn --transpile-only src/index.ts",
+        "build": "tsc --build",
+        "start": "node ./build/src/index.js",
+        "test": "jest"
+    },
+    "author": "Matheus de Sá",
+    "license": "MIT",
+    "dependencies": {
+        "config": "^3.3.7",
+        "cors": "^2.8.5",
+        "dayjs": "^1.11.2",
+        "express": "^4.18.1",
+        "mongoose": "^6.3.4",
+        "pino": "^7.11.0",
+        "pino-pretty": "^7.6.1",
+        "zod": "^3.17.3"
+    },
+    "devDependencies": {
+        "@types/body-parser": "^1.19.2",
+        "@types/config": "0.0.41",
+        "@types/cors": "^2.8.12",
+        "@types/express": "^4.17.13",
+        "@types/jest": "^27.5.1",
+        "@types/mongoose": "^5.11.97",
+        "@types/node": "^17.0.36",
+        "@types/pino": "^7.0.5",
+        "@types/supertest": "^2.0.12",
+        "jest": "^28.1.0",
+        "mongodb-memory-server": "^8.6.0",
+        "supertest": "^6.2.3",
+        "ts-jest": "^28.0.3",
+        "ts-node-dev": "^2.0.0",
+        "typescript": "^4.7.2"
+    }
+}
